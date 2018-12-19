@@ -1,6 +1,6 @@
 {
   "name": "choozy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Select a bunch of elements.",
   "main": "dist/choozy.js",
   "umd:main": "dist/choozy.umd.js",
@@ -24,6 +24,10 @@
   "homepage": "https://github.com/mikehwagz/choozy",
   "author": "Mike Wagz <mike@wagz.io> (http://wagz.io)",
   "license": "MIT",
+  "files": [
+    "src",
+    "dist"
+  ],
   "devDependencies": {
     "jest": "^23.6.0",
     "microbundle": "^0.8.3"
