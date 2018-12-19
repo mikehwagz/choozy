@@ -1,6 +1,6 @@
 {
   "name": "choozy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Select a bunch of elements.",
   "main": "dist/choozy.js",
   "umd:main": "dist/choozy.umd.js",
@@ -14,12 +14,9 @@
   },
   "repository": "mikehwagz/choozy",
   "keywords": [
-    "signal",
-    "signals",
-    "event",
-    "events",
-    "observer",
-    "emitter"
+    "query",
+    "dom",
+    "select"
   ],
   "homepage": "https://github.com/mikehwagz/choozy",
   "author": "Mike Wagz <mike@wagz.io> (http://wagz.io)",
