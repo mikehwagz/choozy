@@ -1,6 +1,6 @@
 # choozy
 
-choozy is a simple 232 byte utility that simplifies the selection of multiple dom nodes.
+choozy is a tiny 232 byte DOM utility that simplifies the selection of multiple elements
 
 ## Installation
 
@@ -48,6 +48,8 @@ const dom = {
 ```
 
 ### After choozy
+
+If multiple elements contain the same suffix, they are collected into an array.
 
 ```js
 import choozy from 'choozy'
