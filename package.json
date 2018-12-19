@@ -1,0 +1,31 @@
+{
+  "name": "choozy",
+  "version": "0.0.1",
+  "description": "Select a bunch of elements.",
+  "main": "dist/choozy.js",
+  "umd:main": "dist/choozy.umd.js",
+  "module": "dist/choozy.mjs",
+  "unpkg": "dist/choozy.umd.js",
+  "source": "src/choozy.js",
+  "scripts": {
+    "build": "microbundle build",
+    "watch": "microbundle watch",
+    "test": "jest"
+  },
+  "repository": "mikehwagz/choozy",
+  "keywords": [
+    "signal",
+    "signals",
+    "event",
+    "events",
+    "observer",
+    "emitter"
+  ],
+  "homepage": "https://github.com/mikehwagz/choozy",
+  "author": "Mike Wagz <mike@wagz.io> (http://wagz.io)",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "microbundle": "^0.8.3"
+  }
+}
