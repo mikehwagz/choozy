@@ -1,6 +1,6 @@
 # choozy
 
-choozy is a tiny 232 byte DOM utility that simplifies the selection of multiple elements
+choozy is a tiny 254 byte DOM utility that simplifies the selection of multiple elements
 
 ## Installation
 
