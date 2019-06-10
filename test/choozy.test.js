@@ -6,7 +6,7 @@ describe('choozy:', () => {
   })
 
   document.body.innerHTML = `<nav class="js-nav">
-    <button class="js-button" />
+    <button class="js-button js-toggle" />
     <ul class="list js-list">
       <li class="js-items" />
       <li class="js-items" />
@@ -20,11 +20,12 @@ describe('choozy:', () => {
     expect(typeof instance1).toBe('object')
   })
 
-  it('should contain keys nav, button, list, and items', () => {
+  it('should contain keys nav, button, toggle, list, and items', () => {
     let keys = Object.keys(instance1)
-    expect(keys.length).toBe(4)
+    expect(keys.length).toBe(5)
     expect(keys).toContain('nav')
     expect(keys).toContain('button')
+    expect(keys).toContain('toggle')
     expect(keys).toContain('list')
     expect(keys).toContain('items')
   })
