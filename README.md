@@ -27,7 +27,7 @@ Given the following HTML
       </nav>
     </header>
     <main class="js-main"></main>
-    <footer class="js-footer"></main>
+    <footer class="js-footer"></footer>
   </body>
 </html>
 ```
@@ -64,48 +64,7 @@ The first argument is the container that choozy will query. This is the body ele
 The second argument is the prefix that will be used to select elements. By default, this is `js-`
 
 ```js
-choozy((container = document.body), (prefix = 'js-'))
-```
-
-## Examples
-
-### In a single page app
-
-Perhaps you're writing a single page application and you have a base view class that all of the views in your application extend. You could use choozy to handle dom selection so all you need to do is add classes to the elements you need:
-
-```js
-import choozy from 'choozy'
-
-class BaseView {
-  constructor(container) {
-    this.refs = choozy(container)
-    this.init()
-  }
-}
-
-class Home extends BaseView {
-  constructor(container) {
-    super(container)
-  }
-
-  init() {
-    // access your elements via `this.refs`
-  }
-}
-```
-
-### Change the prefix for your entire app
-
-In order to keep this utility as tiny as possible, the choozy function takes 2 arguments instead of an options object. So if you wanted to change the prefix to `foo-` for your whole app, you could do something like this:
-
-```js
-/* util.js */
-
-import choozy from 'choozy'
-
-const myChoozy = container => choozy(container, 'foo-')
-
-export default myChoozy
+choozy(container = document.body, prefix = 'js-')
 ```
 
 ## Inspiration
