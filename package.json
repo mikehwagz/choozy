@@ -1,6 +1,6 @@
 {
   "name": "choozy",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Select a bunch of elements.",
   "main": "dist/choozy.js",
   "umd:main": "dist/choozy.umd.js",
