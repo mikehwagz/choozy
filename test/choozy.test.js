@@ -5,14 +5,16 @@ describe('choozy:', () => {
     expect(typeof choozy).toBe('function')
   })
 
-  document.body.innerHTML = `<nav class="js-nav">
-    <button class="js-button" />
-    <ul class="list js-list">
-      <li class="js-items" />
-      <li class="js-items" />
-      <li class="js-items" />
+  let html = `<nav ref="nav">
+    <button ref="button" />
+    <ul class="list" ref="list">
+      <li ref="items" />
+      <li ref="items" />
+      <li ref="items" />
     </ul>
   </nav>`
+
+  document.body.innerHTML = html
 
   let instance1 = choozy()
 
@@ -34,6 +36,9 @@ describe('choozy:', () => {
   })
 
   describe('param: container', () => {
+    // reset html
+    document.body.innerHTML = html
+
     let container = document.querySelector('.list')
     let instance2 = choozy(container)
 
@@ -42,24 +47,6 @@ describe('choozy:', () => {
       expect(instance2['nav']).toBeFalsy()
       expect(instance2['button']).toBeFalsy()
       expect(instance2['list']).toBeFalsy()
-    })
-  })
-
-  describe('param: prefix', () => {
-    document.body.innerHTML = `
-      <div class="foo-one" />
-      <div class="foo-two" />
-      <div class="foo-three" />
-    `
-
-    let instance3 = choozy(document.body, 'foo-')
-
-    it('should select elements based on the provided prefix', () => {
-      let keys = Object.keys(instance3)
-      expect(keys.length).toBe(3)
-      expect(keys).toContain('one')
-      expect(keys).toContain('two')
-      expect(keys).toContain('three')
     })
   })
 })
