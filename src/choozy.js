@@ -1,4 +1,4 @@
-export default function (container = document.body, prefix = 'js-') {
+export default function (container = document, prefix = 'js-') {
   let els = [].slice.call(container.querySelectorAll(`*[class*="${prefix}"]`))
   return els.reduce((acc, el) => {
     let cx =
